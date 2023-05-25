@@ -124,7 +124,7 @@ You can check what lines have the larger EW
 
 
 
-##Exercise 3
+## Exercise 3
  
 Files: xrism_agn_complex sxs_nn.res
 ```
