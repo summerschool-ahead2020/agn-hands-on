@@ -20,14 +20,14 @@ s.data("combined_simu_rgs.res","rgs_warm_absorber.spo")
 ```
 
 We have RGS data of an AGN located at z=0.017 (``s.com('reds')``). Don’t forget to set the distance:
-``s.distance(1,0.017,'z')``. 
+``s.dist(1,0.017,'z')``. 
 
 The continuum is a simple powerlaw (``s.com('pow')``) with a slope (Gamma) of 2.1. The continuum is 
 absorbed by the cold gas in the Milky Way (``s.com('hot')``). The temperature for this gas is 1e-6 keV 
 and its column density is 1.45e20 cm^-2 (1.45e-4 in SPEX units). 
 
 At the restframe of the source there are 3 warm absorber components (``s.com('xabs')``) with log xi=0.51, 1.34, 2.03.
-The outflow velocity of the xabs component should be left free (``s.par_free(1,1,'zv')``).
+The outflow velocity of the xabs component should be left free (``s.par_free(1,4,'zv')``).
 
 The RGS range goes from 7-35 Ang (=0.35-1.7 keV), so you have to ignore the energies outside this range:
 ```
@@ -83,7 +83,7 @@ s.bin(1,1,0.5,12,3,'kev')
 We have an AGN at z=0.01 observed by XRISM.
 Don’t forget to set the distance!
 ```
-s.distance(1,0.01,'z') 
+s.dist(1,0.01,'z') 
 ```
 The primary spectrum is a powerlaw (pow) with reflection (refl) with a high energy cut off at 300 keV.
 The spectrum is absorbed by one ultrafast outflow (xabs) and of course from absorption in our Galaxy (NH=1.45e20, t=1e-6keV):
@@ -145,7 +145,7 @@ s.bin(1,1,0.5,12.,3,'kev')
 We have an AGN at z=0.01 observed by XRISM.
 Don’t forget to set the distance!
 ```
-s.distance(1,0.01,'z')  
+s.dist(1,0.01,'z')  
 ```
 The primary spectrum is a powerlaw (pow) with reflection (refl).
 
