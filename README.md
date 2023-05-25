@@ -65,7 +65,7 @@ What are the best fit values for the outflows?
 
 Files: xrism_agn_simple.spo sxs_nn.res
 ```
-s.data("sxs_nn.res","xrism_agn_simple.spo")
+s.data("sxs_nn.res","xrism_agn_simple1.spo")
 ```
 
 
@@ -128,7 +128,7 @@ You can check what lines have the larger EW
  
 Files: xrism_agn_complex sxs_nn.res
 ```
-s.data("sxs_nn.res","xrism_agn_complex.spo")
+s.data("sxs_nn.res","xrism_agn_complex1.spo")
 ```
 
 XRISM-Resolve data go from 0.5 to 12 keV. We should ignore energies below and above this range.
